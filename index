@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Carioca - Boulangerie Singulière</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;700;900&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="base.css"/>
+</head>
+<body>
+<!-- Particules de graines en arrière-plan -->
+<div class="seeds-bg" id="seedsContainer"></div>
+
+<!-- Header -->
+
+<header>
+    <div class="header-content">
+        <div class="logo">
+            <div class="logo-container">
+                <img src="logo.png" alt="La Carioca Logo" class="logo-img">
+            </div>
+            <a href="#top">
+                <div class="logo-text">
+                    LA CARIOCA
+                    <span>Boulangerie Singulière</span>
+                </div>
+            </a>
+        </div>
+        <nav id="mainNav">
+            <div class="burger" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul>
+                <li><a href="#top">Accueil</a></li>
+                <li><a href="#produits">Nos Pains</a></li>
+                <li><a href="#about">Notre Histoire</a></li>
+                <li><a href="#boutiques">Boutiques</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<!-- Main Content -->
+
+    <div class="hero">
+        <div class="hero-content">
+            <h1>LA CARIOCA</h1>
+            <p class="tagline">Boulangerie Singulière</p>
+            <p class="description">
+                Pain bio au levain naturel, élaboré à partir de blés anciens moulus sur meules de pierre
+                et de semences paysannes. Champion de France 2025 du Panettone traditionnel.
+            </p>
+            <div class="cta-buttons">
+                <a href="#produits" class="btn btn-primary">Découvrir nos pains</a>
+                <a href="#boutiques" class="btn btn-secondary">Nos boutiques</a>
+            </div>
+        </div>
+    </div>
+<main>
+    <!-- Section Nos Valeurs -->
+    <section id="about" class="fade-in">
+        <h2 class="section-title">Une Boulangerie Singulière</h2>
+
+        <div class="cards-grid">
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?q=80&w=800" alt="Pain bio artisanal" class="card-image">
+                <div class="card-content">
+                    <span class="card-icon">🌾</span>
+                    <h3>Bio & Local</h3>
+                    <p>
+                        Pain bio au levain naturel élaboré à partir de blés anciens moulus sur meules de pierre
+                        et de semences paysannes. Collaboration directe avec un paysan meunier local.
+                    </p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1549931319-a545dcf3bc73?q=80&w=800" alt="Fermentation naturelle" class="card-image">
+                <div class="card-content">
+                    <span class="card-icon">⏰</span>
+                    <h3>Temps Long</h3>
+                    <p>
+                        Pétrissage lent et fermentation longue au levain naturel qui donnent au pain
+                        un goût unique et une conservation exceptionnelle. Une patience récompensée.
+                    </p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1608198093002-ad4e005484ec?q=80&w=800" alt="Panettone champion" class="card-image">
+                <div class="card-content">
+                    <span class="card-icon">🏆</span>
+                    <h3>Champion de France</h3>
+                    <p>
+                        Champion de France 2025 du Panettone traditionnel. Une reconnaissance de notre
+                        savoir-faire artisanal et de notre passion pour le bon pain.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Produits -->
+    <section id="produits" class="fade-in">
+        <h2 class="section-title">Nos Créations</h2>
+
+        <div class="cards-grid">
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1549931319-a545dcf3bc73?q=80&w=800" alt="Pains au levain" class="card-image">
+                <div class="card-content">
+                    <h3>Pains au Levain</h3>
+                    <p>
+                        Pain de campagne, multigraines, pain aux olives, pain de seigle, pain d'épeautre,
+                        pain complet, pain aux noix, pain aux figues... Tous nos pains sont au levain naturel,
+                        sans levure.
+                    </p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1586444248902-2f64eddc13df?q=80&w=800" alt="Pain sans gluten" class="card-image">
+                <div class="card-content">
+                    <h3>Sans Gluten</h3>
+                    <p>
+                        Pain sans gluten de qualité : riz, sarrasin, pois chiches.
+                        Un engagement fort pour permettre à tous de savourer du bon pain artisanal.
+                    </p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1608198093002-ad4e005484ec?q=80&w=800" alt="Panettone artisanal" class="card-image">
+                <div class="card-content">
+                    <h3>Panettone 🏆</h3>
+                    <p>
+                        Notre spécialité ! Brioche italienne aux fruits confits et agrumes du Piémont.
+                        Champion de France 2025. Un travail d'orfèvre récompensé.
+                    </p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?q=80&w=800" alt="Viennoiseries artisanales" class="card-image">
+                <div class="card-content">
+                    <h3>Viennoiseries</h3>
+                    <p>
+                        Brioches, pompe à l'huile (végan), fougasse d'Aigues-Mortes,
+                        roulés à la cannelle, granockies aux amandes-raisins ou noisettes-chocolat.
+                    </p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1619096252214-ef06c45683e3?q=80&w=800" alt="Focaccia et sandwiches" class="card-image">
+                <div class="card-content">
+                    <h3>Focaccias & Sandwiches</h3>
+                    <p>
+                        Pause déjeuner ou en-cas avec nos sandwiches de saison,
+                        Pan Bagnat, et fougasse aux olives. Fraîcheur et qualité garanties.
+                    </p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1558961363-fa8fdf82db35?q=80&w=800" alt="Biscuits artisanaux" class="card-image">
+                <div class="card-content">
+                    <h3>Biscuits</h3>
+                    <p>
+                        Une sélection de biscuits artisanaux pour accompagner vos moments gourmands.
+                        Toujours avec la même exigence de qualité et d'authenticité.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Histoire -->
+    <section class="fade-in histoire-section">
+        <h2 class="section-title">Notre Histoire</h2>
+
+        <div class="histoire-content">
+            <p class="histoire-intro">
+                Le mot "Carioca" évoque Rio de Janeiro, la joie de vivre et la convivialité.
+            </p>
+
+            <p class="histoire-text">
+                Fondée en 2020 par <strong>Damien Larderet</strong>, La Carioca est née d'une passion pour le bon pain,
+                découverte lors de ses années au Brésil. De retour en France, il décide de créer une
+                boulangerie singulière, un clin d'œil à "l'île singulière" de Paul Valéry.
+            </p>
+
+            <p class="histoire-text">
+                Notre mission : proposer un pain simple, noble, démocratique et de qualité.
+                Un pain au levain naturel, accessible à tous, qui respecte le travail du paysan
+                et les cycles de la nature.
+            </p>
+
+            <p class="histoire-text">
+                Aujourd'hui, La Carioca c'est <strong>trois boutiques</strong> entre Sète et Mèze,
+                une certification bio, et surtout une équipe passionnée qui travaille chaque jour
+                pour vous offrir le meilleur du pain artisanal.
+            </p>
+
+            <div class="histoire-badge">
+                <p>🏆 Champion de France 2025 du Panettone Traditionnel</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Boutiques -->
+    <section id="boutiques" class="fade-in">
+        <h2 class="section-title">Nos Boutiques</h2>
+
+        <div class="cards-grid">
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?q=80&w=800" alt="Boulangerie Sète Quai" class="card-image">
+                <div class="card-content">
+                    <span class="card-icon">📍</span>
+                    <h3>Sète - Quai</h3>
+                    <p>
+                        <strong>20 Quai Maréchal de Lattre de Tassigny</strong><br>
+                        34200 Sète<br><br>
+                        Au bord du canal, notre boutique principale où tout a commencé.
+                        Venez découvrir l'ambiance singulière de La Carioca dans ce lieu emblématique.
+                    </p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1587899897387-091ebd01a6b2?q=80&w=800" alt="Boulangerie Sète Halles" class="card-image">
+                <div class="card-content">
+                    <span class="card-icon">📍</span>
+                    <h3>Sète - Halles</h3>
+                    <p>
+                        <strong>6 bis Rue Alsace-Lorraine</strong><br>
+                        34200 Sète<br><br>
+                        À deux pas des Halles de Sète, pour faire vos courses en profitant
+                        du meilleur du marché et de notre pain artisanal.
+                    </p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1558636508-e0db3814bd1d?q=80&w=800" alt="Boulangerie Mèze" class="card-image">
+                <div class="card-content">
+                    <span class="card-icon">📍</span>
+                    <h3>Mèze</h3>
+                    <p>
+                        <strong>6 Route de Montpellier</strong><br>
+                        34140 Mèze<br><br>
+                        La petite sœur de La Carioca à Sète. Même passion,
+                        même qualité dans la charmante ville de Mèze au bord de l'étang de Thau.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="horaires-container">
+            <div class="horaires-wrapper">
+                <h3 class="horaires-title">Horaires d'ouverture</h3>
+                <div class="horaires-grid">
+                    <div class="horaire-card">
+                        <p class="horaire-day">Mardi</p>
+                        <p class="horaire-time">14h - 19h</p>
+                    </div>
+                    <div class="horaire-card">
+                        <p class="horaire-day">Mercredi - Samedi</p>
+                        <p class="horaire-time">9h30 - 19h</p>
+                    </div>
+                    <div class="horaire-card closed">
+                        <p class="horaire-day">Dimanche & Lundi</p>
+                        <p class="horaire-time">Fermé</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Contact -->
+    <section id="contact" class="fade-in">
+        <h2 class="section-title">Contactez-nous</h2>
+
+        <div class="contact-container">
+            <div class="contact-sms">
+                <p class="contact-intro">
+                    Pour vos réservations, contactez-nous par SMS
+                </p>
+
+                <a href="sms:0638427566" class="btn-sms">
+                    📱 06 38 42 75 66
+                </a>
+            </div>
+
+            <div class="social-section">
+                <p class="social-intro">
+                    Suivez notre actualité et nos créations du moment
+                </p>
+
+                <div class="social-buttons">
+                    <a href="https://www.instagram.com/lacariocaboulangerie/" target="_blank" class="btn-instagram">
+                        📷 Instagram
+                    </a>
+                    <a href="https://www.facebook.com/lacariocaboulangerie/" target="_blank" class="btn-facebook">
+                        👍 Facebook
+                    </a>
+                </div>
+            </div>
+
+            <div class="info-card">
+                <p>
+                    🌾 Boulangerie certifiée en agriculture biologique<br>
+                    🥖 Pain au levain naturel<br>
+                    🏆 Champion de France 2025 Panettone
+                </p>
+            </div>
+        </div>
+    </section>
+ </main>
+ <!-- Footer -->
+<footer>
+    <div class="footer-content">
+        <div class="footer-section">
+            <h4>La Carioca</h4>
+            <p>Boulangerie singulière certifiée bio</p>
+            <p>Pain au levain naturel</p>
+            <p>Blés anciens & semences paysannes</p>
+            <div class="social-links">
+                <a href="https://www.instagram.com/lacariocaboulangerie/" target="_blank" aria-label="Instagram">📷</a>
+                <a href="https://www.facebook.com/lacariocaboulangerie/" target="_blank" aria-label="Facebook">f</a>
+            </div>
+        </div>
+
+        <div class="footer-section">
+            <h4>Sète</h4>
+            <p>20 Quai Maréchal de Lattre de Tassigny</p>
+            <p>34200 Sète</p>
+            <br>
+            <p>6 bis Rue Alsace-Lorraine</p>
+            <p>34200 Sète</p>
+        </div>
+
+        <div class="footer-section">
+            <h4>Mèze</h4>
+            <p>6 Route de Montpellier</p>
+            <p>34140 Mèze</p>
+            <br>
+            <p>📱 06 38 42 75 66</p>
+            <p>(SMS uniquement pour réservations)</p>
+        </div>
+
+        <div class="footer-section">
+            <h4>Horaires</h4>
+            <p>Mardi : 14h - 19h</p>
+            <p>Mercredi - Samedi : 9h30 - 19h</p>
+            <p>Dimanche - Lundi : Fermé</p>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <p>&copy; {{ "now"|date("Y") }} La Carioca - Boulangerie Singulière | Tous droits réservés</p>
+        <p>Pain bio au levain naturel • Champion de France 2025 Panettone</p>
+    </div>
+</footer>
+    <script src="animationBase.js"></script>
+</body>
+</html>
