@@ -1,0 +1,401 @@
+/* ============================================
+   STYLES POUR LA PAGE D'ACCUEIL - LA CARIOCA
+   ============================================ */
+
+/* Sections */
+section {
+    scroll-margin-top: 100px;
+}
+
+/* ============================================
+   SECTION HISTOIRE
+   ============================================ */
+.histoire-section {
+    background: linear-gradient(135deg, rgba(255, 251, 245, 0.97) 0%, rgba(201, 169, 97, 0.15) 100%),
+    url('https://images.unsplash.com/photo-1517433670267-08bbd4be890f?q=80&w=2000') center/cover;
+    padding: 6rem 5%;
+    margin: 4rem 0;
+    background-attachment: fixed;
+    position: relative;
+}
+
+.histoire-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(circle at 30% 50%, rgba(201, 169, 97, 0.08) 0%, transparent 70%);
+    pointer-events: none;
+}
+
+.histoire-content {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 2;
+    background: rgba(255, 255, 255, 0.95);
+    padding: 4rem;
+    border-radius: 20px;
+    backdrop-filter: blur(15px);
+    box-shadow: 0 20px 60px rgba(44, 44, 44, 0.12),
+    0 0 0 1px rgba(201, 169, 97, 0.1);
+    position: relative;
+    border: 1px solid rgba(212, 165, 116, 0.2);
+}
+
+.histoire-intro {
+    font-size: 1.4rem;
+    margin-bottom: 2rem;
+    font-style: italic;
+    font-family: 'Playfair Display', serif;
+    color: #B8935F;
+    font-weight: 600;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+.histoire-text {
+    margin-bottom: 2rem;
+    font-size: 1.1rem;
+    color: #3A3A3A;
+}
+
+.histoire-badge {
+    margin-top: 3rem;
+    padding-top: 2rem;
+    border-top: 3px solid #C9A961;
+}
+
+.histoire-badge p {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #B8935F;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+/* ============================================
+   SECTION HORAIRES
+   ============================================ */
+.horaires-container {
+    text-align: center;
+    margin-top: 4rem;
+    padding: 3rem;
+    background: linear-gradient(135deg, #FFFBF5 0%, rgba(201, 169, 97, 0.12) 100%);
+    border-radius: 20px;
+    box-shadow: 0 10px 40px rgba(44, 44, 44, 0.1);
+    border: 1px solid rgba(201, 169, 97, 0.15);
+}
+
+.horaires-wrapper {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.horaires-title {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    font-family: 'Playfair Display', serif;
+    color: #2C2C2C;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+.horaires-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+    text-align: left;
+    margin-bottom: 2rem;
+}
+
+.horaire-card {
+    padding: 1.5rem;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(44, 44, 44, 0.08);
+    border: 1px solid rgba(201, 169, 97, 0.1);
+    transition: all 0.3s ease;
+}
+
+.horaire-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(44, 44, 44, 0.12);
+    border-color: rgba(201, 169, 97, 0.3);
+}
+
+.horaire-day {
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: #B8935F;
+}
+
+.horaire-time {
+    font-size: 1.1rem;
+    color: #3A3A3A;
+}
+
+.horaire-card.closed .horaire-day,
+.horaire-card.closed .horaire-time {
+    color: #999;
+}
+
+
+/* ============================================
+   SECTION CONTACT
+   ============================================ */
+.contact-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.contact-sms {
+    text-align: center;
+    padding: 3rem;
+    background: linear-gradient(135deg, rgba(255, 251, 245, 0.98) 0%, rgba(201, 169, 97, 0.18) 100%);
+    border-radius: 20px;
+    margin-bottom: 3rem;
+    box-shadow: 0 10px 40px rgba(44, 44, 44, 0.12);
+    border: 1px solid rgba(201, 169, 97, 0.2);
+}
+
+.contact-intro {
+    font-size: 1.3rem;
+    line-height: 2;
+    margin-bottom: 2rem;
+    font-family: 'Playfair Display', serif;
+    color: #3A3A3A;
+}
+
+.btn-sms {
+    display: inline-block;
+    padding: 1.5rem 3rem;
+    background: linear-gradient(135deg, #2C2C2C 0%, #3A3A3A 100%);
+    color: #FFF8F0;
+    text-decoration: none;
+    border-radius: 50px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    box-shadow: 0 10px 30px rgba(44, 44, 44, 0.25);
+    border: 2px solid transparent;
+}
+
+.btn-sms:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 15px 40px rgba(44, 44, 44, 0.35);
+    background: linear-gradient(135deg, #3A3A3A 0%, #2C2C2C 100%);
+    border-color: #C9A961;
+}
+
+.social-section {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.social-intro {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    color: #3A3A3A;
+}
+
+.social-buttons {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.btn-instagram,
+.btn-facebook {
+    padding: 1.2rem 2.5rem;
+    color: white;
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    position: relative;
+    overflow: hidden;
+    border: 2px solid transparent;
+}
+
+.btn-instagram {
+    background: linear-gradient(135deg, #F58529 0%, #DD2A7B 50%, #8134AF 100%);
+    box-shadow: 0 8px 25px rgba(221, 42, 123, 0.35);
+}
+
+.btn-instagram:hover {
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 12px 35px rgba(221, 42, 123, 0.45);
+    border-color: rgba(255, 255, 255, 0.3);
+}
+
+.btn-facebook {
+    background: linear-gradient(135deg, #1877F2 0%, #0D5DBD 100%);
+    box-shadow: 0 8px 25px rgba(24, 119, 242, 0.35);
+}
+
+.btn-facebook:hover {
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 12px 35px rgba(24, 119, 242, 0.45);
+    border-color: rgba(255, 255, 255, 0.3);
+}
+
+.info-card {
+    text-align: center;
+    padding: 2rem;
+    background: white;
+    border-radius: 15px;
+    border-left: 4px solid #C9A961;
+    box-shadow: 0 5px 20px rgba(44, 44, 44, 0.08);
+}
+
+.info-card p {
+    font-style: italic;
+    color: #555;
+    line-height: 1.8;
+}
+
+/* ============================================
+   EFFETS ET ANIMATIONS
+   ============================================ */
+
+/* Effet parallaxe amélioré */
+@media (min-width: 768px) {
+    [style*="background-attachment: fixed"] {
+        position: relative;
+    }
+}
+
+/* Animation des images au chargement */
+.card-image {
+    animation: fadeIn 0.8s ease;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.95);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Effet de brillance sur les boutons */
+.btn-sms,
+.btn-instagram,
+.btn-facebook {
+    position: relative;
+    overflow: hidden;
+}
+
+.btn-sms::before,
+.btn-instagram::before,
+.btn-facebook::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+    transition: left 0.5s ease;
+}
+
+.btn-sms:hover::before,
+.btn-instagram:hover::before,
+.btn-facebook:hover::before {
+    left: 100%;
+}
+
+/* Badges décoratifs */
+.badge {
+    display: inline-block;
+    padding: 0.5rem 1.5rem;
+    background: linear-gradient(135deg, #C9A961 0%, #B8935F 100%);
+    color: white;
+    border-radius: 50px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin: 0.5rem;
+    box-shadow: 0 4px 15px rgba(201, 169, 97, 0.35);
+}
+
+/* Style pour les citations */
+blockquote {
+    border-left: 4px solid #C9A961;
+    padding-left: 2rem;
+    font-style: italic;
+    color: #555;
+    margin: 2rem 0;
+}
+
+/* ============================================
+   RESPONSIVE
+   ============================================ */
+@media (max-width: 768px) {
+    .card-image {
+        height: 200px;
+    }
+
+    .hero {
+        background-attachment: scroll !important;
+    }
+
+    .histoire-section {
+        background-attachment: scroll !important;
+    }
+
+    .histoire-content {
+        padding: 2rem;
+    }
+
+    .histoire-intro {
+        font-size: 1.2rem;
+    }
+
+    .histoire-text {
+        font-size: 1rem;
+    }
+
+    .horaires-container {
+        padding: 2rem;
+    }
+
+    .horaires-title {
+        font-size: 1.5rem;
+    }
+
+    .horaires-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-sms {
+        padding: 2rem;
+    }
+
+    .contact-intro {
+        font-size: 1.1rem;
+    }
+
+    .btn-sms {
+        padding: 1.2rem 2rem;
+        font-size: 1rem;
+    }
+
+    .social-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .btn-instagram,
+    .btn-facebook {
+        width: 100%;
+        max-width: 300px;
+        justify-content: center;
+    }
+}
